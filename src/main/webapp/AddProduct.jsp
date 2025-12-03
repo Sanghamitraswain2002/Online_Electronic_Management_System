@@ -1,0 +1,24 @@
+<%@page import="com.ani.pack1.AdminBean"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<center>
+			<h1>
+				<%
+					AdminBean bean= (AdminBean)session.getAttribute("AdminBean");
+					String data = (String)request.getAttribute("msg");
+					out.println(data+" Mr. "+bean.getA_fname()+"<br>");
+				%>
+			
+			
+			</h1>
+			
+			<jsp:include page="AdminHome.jsp"></jsp:include>
+</body>
+</html>

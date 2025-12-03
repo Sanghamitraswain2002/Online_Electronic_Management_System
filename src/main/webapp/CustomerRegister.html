@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customer Register</title>
+
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CUSTOM CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    body {
+        background: #eef2f3;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .register-card {
+        max-width: 550px;          /* Slightly smaller */
+        background: white;
+        margin: 40px auto;         /* Lower height from top */
+        padding: 20px;             /* Reduced internal padding */
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        animation: fadeIn 0.6s ease;
+    }
+
+    .register-header {
+        font-size: 23px;           /* Smaller heading */
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 18px;
+        color: #333;
+    }
+
+    .form-control-lg {
+        padding: 8px 12px;         /* Reduce field height */
+        font-size: 15px;           /* Slightly smaller text */
+    }
+
+    button {
+        padding: 10px !important;  /* Reduce button height */
+        font-size: 16px !important;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(15px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+
+
+</head>
+<body>
+
+<!-- ⭐ NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#1e3a8a;">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            <i class="fa-solid fa-user-plus"></i> Customer Register
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="CustomerLogin.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="AdminLogin.html">Admin</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ⭐ REGISTER CARD -->
+<div class="register-card">
+
+    <div class="register-header">
+        Customer Registration
+    </div>
+
+    <form action="acs" method="post">
+
+        <!-- USERNAME -->
+        <label class="form-label fw-semibold">
+            <i class="fa-solid fa-user"></i> Username
+        </label>
+        <input type="text" name="uname" class="form-control form-control-lg mb-3" required>
+
+        <!-- PASSWORD -->
+        <label class="form-label fw-semibold">
+            <i class="fa-solid fa-lock"></i> Password
+        </label>
+        <input type="password" name="pwd" class="form-control form-control-lg mb-3" required>
+
+        <!-- FIRST NAME -->
+        <label class="form-label fw-semibold">
+            <i class="fa-solid fa-id-card"></i> First Name
+        </label>
+        <input type="text" name="fname" class="form-control form-control-lg mb-3" required>
+
+        <!-- LAST NAME -->
+        <label class="form-label fw-semibold">
+            <i class="fa-solid fa-id-card-clip"></i> Last Name
+        </label>
+        <input type="text" name="lname" class="form-control form-control-lg mb-3" required>
+
+        <!-- ADDRESS -->
+        <label class="form-label fw-semibold">
+            <i class="fa-solid fa-location-dot"></i> Address
+        </label>
+        <input type="text" name="addrs" class="form-control form-control-lg mb-3" required>
+
+        <!-- EMAIL -->
+        <label class="form-label fw-semibold">
+            <i class="fa-solid fa-envelope"></i> Mail Id
+        </label>
+        <input type="email" name="mid" class="form-control form-control-lg mb-3" required>
+
+        <!-- MOBILE -->
+        <label class="form-label fw-semibold">
+            <i class="fa-solid fa-phone"></i> Mobile
+        </label>
+        <input type="text" name="mobile" class="form-control form-control-lg mb-4" required>
+
+        <!-- SUBMIT BUTTON -->
+        <button class="btn btn-success w-100 py-2 fw-bold">
+            <i class="fa-solid fa-check-circle"></i> Register
+        </button>
+
+    </form>
+</div>
+
+<!-- ⭐ FOOTER -->
+<footer class="bg-primary text-white text-center py-3 mt-5">
+    © 2025 Electronic Store | Designed by <strong>Anirudh Ghogre</strong>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
