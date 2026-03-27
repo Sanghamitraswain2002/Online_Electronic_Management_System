@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Electronic Store</title>
+
+<style>
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #eef2f7, #dbe4f3);
+        color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+        background: #1f3c88;
+        padding: 15px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    .navbar h2 {
+        margin: 0;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #ffcc00;
+    }
+
+    /* Header */
+    .header {
+        text-align: center;
+        padding: 60px 20px 30px;
+    }
+
+    .header h1 {
+        font-size: 38px;
+        color: #1f3c88;
+    }
+
+    .header p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    /* Main Container */
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px 80px;
+        flex-wrap: wrap;
+    }
+
+    /* Contact Card */
+    .contact-card {
+        background: white;
+        padding: 30px;
+        width: 400px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .contact-card h2 {
+        color: #1f3c88;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .info strong {
+        color: #1f3c88;
+    }
+
+    /* Feedback Form */
+    .form-card {
+        background: white;
+        padding: 30px;
+        width: 450px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .form-card h2 {
+        color: #1f3c88;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+
+    .btn {
+        background: #1f3c88;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 15px;
+    }
+
+    .btn:hover {
+        background: #ffcc00;
+        color: black;
+    }
+
+    /* Footer */
+    .footer {
+        background: #0e1f4d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media(max-width: 900px){
+        .container {
+            padding: 20px;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>Electronic Store</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <h1>Contact Us</h1>
+    <p>We value your feedback and are happy to assist you.</p>
+</div>
+
+<!-- Main Section -->
+<div class="container">
+
+    <!-- Contact Info -->
+    <div class="contact-card">
+        <h2>Contact Details</h2>
+
+        <div class="info">
+            <strong>Name:</strong> Sanghamitra Swain
+        </div>
+
+        <div class="info">
+            <strong>Location:</strong> Ameerpet, Hyderabad
+        </div>
+
+        <div class="info">
+            <strong>Email:</strong> swainsanghamitra617@...
+        </div>
+
+        <div class="info">
+            <strong>Phone:</strong> +91 7735952226
+        </div>
+
+        <div class="info">
+            <strong>Support Hours:</strong> Monday – Saturday (10:00 AM – 6:00 PM)
+        </div>
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="form-card">
+        <h2>Send Feedback</h2>
+
+        <form action="#" method="post">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea placeholder="Write your feedback here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Feedback</button>
+
+        </form>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    © 2026 Electronic Store | Designed & Developed by Sanghamitra Swain
+</div>
+
+</body>
+</html>

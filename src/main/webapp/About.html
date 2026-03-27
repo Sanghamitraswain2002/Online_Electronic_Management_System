@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Electronic Store</title>
+
+<style>
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #f4f7fc, #e6ecf8);
+        color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+        background: #1f3c88;
+        padding: 15px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    .navbar h2 {
+        margin: 0;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #ffcc00;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 80px 20px 50px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        color: #1f3c88;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        max-width: 900px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #555;
+    }
+
+    /* Section */
+    .section {
+        padding: 60px 80px;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 32px;
+        color: #1f3c88;
+        margin-bottom: 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card h3 {
+        color: #1f3c88;
+        margin-bottom: 15px;
+    }
+
+    .card p {
+        line-height: 1.7;
+        color: #555;
+    }
+
+    /* Mission Section */
+    .mission {
+        background: #1f3c88;
+        color: white;
+        padding: 60px 80px;
+        text-align: center;
+    }
+
+    .mission h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .mission p {
+        max-width: 900px;
+        margin: auto;
+        line-height: 1.8;
+        font-size: 17px;
+    }
+
+    /* Footer */
+    .footer {
+        background: #0e1f4d;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>Electronic Store</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+        <a href="AdminLogin.html">Admin</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>About Our Electronic Store Management System</h1>
+    <p>
+        The Online Electronic Store Management System is a complete web-based 
+        application developed using Java, Servlets, JDBC, and MySQL. 
+        It provides a digital platform for managing electronic products, 
+        customer accounts, and sales transactions efficiently and securely.
+        This system demonstrates real-world CRUD operations, authentication 
+        mechanisms, and database integration in a structured MVC architecture.
+    </p>
+</div>
+
+<!-- Features Section -->
+<div class="section">
+    <h2 class="section-title">Key Features</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Admin Module</h3>
+            <p>
+                The Admin module allows administrators to manage products,
+                categories, pricing, stock availability, and customer records.
+                Admins can perform Create, Read, Update, and Delete (CRUD)
+                operations securely.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Customer Module</h3>
+            <p>
+                Customers can register, log in, browse products,
+                and manage their personal information.
+                The system ensures a smooth shopping experience
+                with user-friendly navigation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Database Integration</h3>
+            <p>
+                The application uses JDBC connectivity to interact
+                with a relational database. Secure database connections
+                and structured queries ensure data integrity
+                and performance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Secure Authentication</h3>
+            <p>
+                Login authentication is implemented for both Admin
+                and Customers to maintain system security and prevent
+                unauthorized access.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Scalable Architecture</h3>
+            <p>
+                The project follows a layered architecture including
+                DAO layer, Servlet controllers, and frontend UI,
+                making it scalable and maintainable.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>User-Friendly Interface</h3>
+            <p>
+                Designed with modern UI principles, the system provides
+                a clean, responsive, and professional interface suitable
+                for real-world applications.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Mission Section -->
+<div class="mission">
+    <h2>Our Mission</h2>
+    <p>
+        Our mission is to deliver a reliable and efficient electronic store
+        management solution that simplifies product management and enhances
+        customer experience. This project represents a practical implementation
+        of enterprise-level Java web technologies and serves as a strong
+        foundation for building advanced e-commerce systems.
+    </p>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    © 2026 Electronic Store | Designed & Developed by Sanghamitra Swain
+</div>
+
+</body>
+</html>

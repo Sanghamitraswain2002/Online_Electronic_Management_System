@@ -72,13 +72,53 @@
     </div>
 </nav>
 
+<div class="carousel slide" data-bs-ride="carousel" id="topBanner">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/aebf10e44c4c066f.jpeg?q=60" class="w-100 d-block">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/5ab0f654d9161154.jpg?q=60" class="w-100 d-block">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3500">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/6204fe0e1d4cd758.jpeg?q=60" class="w-100 d-block">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/bac6e385f3bd157c.jpeg?q=60" class="w-100 d-block">
+            </div>
+        </div>
+
+        <!-- carousel Inner End -->
+         <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#topBanner">
+            <span class="carousel-control-prev-icon"></span>
+         </button>
+
+         <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#topBanner">
+            <span class="carousel-control-next-icon"></span>
+         </button>
+
+         <!-- carousel Indicators -->
+
+         <div class="carousel-indicators">
+            <!-- how much carousel that much button you have to need -->
+            <button class="active rounded rounded-circle" data-bs-slide-to="0" data-bs-target="#topBanner"></button>
+            <button data-bs-slide-to="1" data-bs-target="#topBanner"></button>
+            <button data-bs-slide-to="2" data-bs-target="#topBanner"></button>
+            <button data-bs-slide-to="3" data-bs-target="#topBanner"></button>
+         </div>
+
+    </div>
+
 <!-- ⭐ CUSTOMER CARD -->
 <div class="home-card">
 
     <h3 class="fw-bold mb-3" style="color:#333;">
         <%
             CustomerBean bean = (CustomerBean)session.getAttribute("CustomerBean");
-            out.println("Welcome Mr. " + bean.getF_name() + "!");
+            out.println("Welcome " + bean.getF_name() + "!");
         %>
     </h3>
 
@@ -94,7 +134,7 @@
 
 <!-- ⭐ FOOTER -->
 <footer class="bg-primary text-white text-center py-3 mt-5">
-    © 2025 Electronic Store | Designed by <strong>Anirudh Ghogre</strong>
+    © 2025 Electronic Store | Designed by <strong>Sanghamitra Ghogre</strong>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

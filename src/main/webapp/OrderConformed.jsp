@@ -147,7 +147,7 @@
 
 <!-- FOOTER -->
 <div class="footer">
-    © 2025 Electronic Store | Designed by Anirudh Ghogre
+    © 2025 Electronic Store | Designed by Sanghamitra
 </div>
 
 </body>

@@ -118,7 +118,7 @@
 
 <!-- ⭐ FOOTER -->
 <footer class="bg-primary text-white text-center py-3">
-    © 2025 Electronic Store | Designed by <strong>Anirudh Ghogre</strong>
+    © 2025 Electronic Store | Designed by <strong>Sanghamitra</strong>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
